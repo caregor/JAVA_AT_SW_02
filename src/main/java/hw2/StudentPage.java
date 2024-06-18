@@ -47,4 +47,5 @@ public class StudentPage {
         wait.until(ExpectedConditions.attributeToBe(elements.getProgressBar(), "aria-hidden", "true"));
         //wait.until((ExpectedCondition<Boolean>) driver -> "true".equals(elements.getProgressBar().getAttribute("aria-hidden")));
     }
+
 }

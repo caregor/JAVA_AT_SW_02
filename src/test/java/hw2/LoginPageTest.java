@@ -1,5 +1,6 @@
 package hw2;
 
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -62,5 +63,10 @@ public class LoginPageTest {
 
         Assertions.assertEquals("active", revertStatus);
         Assertions.assertEquals(currentStudents + 1, actualStudents);
+    }
+
+    @AfterAll
+    static void tearDown() {
+        driver.quit();
     }
 }
